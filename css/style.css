@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: "Lato";
+	color: #424551;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* ================================================================ */
+
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+[class*="__containers"] {
+	max-width: 1245px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* ================================ header ================================ */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0px;
+	z-index: 62;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.header__menu {
+	flex-grow: 1;
+}
+
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
+	row-gap: 10px;
+}
+
+.menu__link {
+	font-weight: 700;
+}
+
+.menu__link:hover {
+	text-decoration: underline;
+}
+
+
+.actions-header {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	gap: 36px;
+	flex-wrap: wrap;
+}
+
+.actions-header__log {
+	font-weight: 700;
+	background: url('../img/icons/person.svg') left no-repeat;
+	padding-left: 24px;
+	line-height: 1.25;
+}
+
+.actions-header__log:hover span {
+	text-decoration: underline;
+}
+
+
+/* ================================== the form ============================================ */
+
+.questions {
+	padding: 180px 0;
+}
+.questions__containers {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+	row-gap: 40px;
+}
+.questions__image {
+	flex: 0 0 42.5%;
+	padding-right: 40px;
+	min-width: 350px;
+	margin: 0 auto;
+}
+.questions__picture {
+	max-width: 103.6%;
+	transform: translate(-3.6%);
+}
+.questions__par-right {
+	flex: 1 1 57.5%;
+}
+.questions__title:not(:last-child) {
+		margin-bottom: 40px;
+}
+.title__small-title {
+	font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #1E212C;
+}
+.title__titel {
+	font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+}
+.questions__form {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+.form__menu {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin: 0 -12.5px;
+}
+.form__line {
+	min-width: 280px;
+	padding: 0 12.5px;
+	flex: 1 1 50%;
+}
+.form__label {
+	display: block;
+	line-height: 1.6;
+	color: #424551;
+}
+.form__label:not(:last-child) {
+	margin-bottom: 8px;
+}
+.form__input,
+.from__area {
+	padding: 13px 16px;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+}
+.form__input::placeholder,
+.from__area::placeholder{
+	color: #9A9CA5;
+}
+
+.form__line--area {
+	flex: 1 1 100%;
+}
+
+.from__area{
+	width: 100%;
+	min-height: 128px;
+	resize: vertical;
+}
+
+.form__submenu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	row-gap: 30px;
+	justify-content: space-between;
+}
+.form__checkbox {
+	padding-right: 50px;
+	flex: 1 1 44%;
+}
+
+.form__button{
+	flex: 1 1 auto;
+}
+
+.checkbox {
+	position: relative;
+}
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.checkbox__input:checked + .checkbox__label::before{
+	background: #FF3F3A url(../img/check.svg) no-repeat  center;
+}
+
+.checkbox__label {
+	line-height: 1.6;
+	color: #424551;
+	display: inline-flex;
+	gap: 12px;
+	cursor: pointer;
+}
+
+.checkbox__label::before {
+	content: '';
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #FF3F3A;
+	border-radius: 3px;
+	transform: translate(0, 5px);
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>home work lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<a href="#" class="header__logo">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">About Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Courses</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Events</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__actions actions-header">
+						<a href="#" class="actions-header__button button"><span>Get consultation</span></a>
+						<a href="#" class="actions-header__log"><span>Log in / Register</span></a>
+					</div>
+				</div>
+			</header>
+            <main class="page">
+				<section class="page__questions questions">
+					<div class="questions__containers">
+							<div class="questions__image">
+								<img class="questions__picture" src="img/illustration01.svg" alt="illustration01">
+							</div>
+							<div class="questions__par-right">
+								<div class="questions__title title">
+									<h6 class="title__small-title">Any questions?</h6>
+									<h2 class="title__titel">Drop us a line</h2>
+								</div>
+								<form class="questions__form form" method="POST" enctype="multipart/form-data" action="#">
+								<div class="form__menu">
+									<div class="form__line">
+										<label class="form__label" for="name">First Name*</label>
+										<input class="form__input" tabindex="1" required id="name" autocomplete="off" name="name" placeholder="Your first name" type="text">
+									</div>
+									<div class="form__line">
+										<label class="form__label" for="surname">Last  Name*</label>
+										<input class="form__input" tabindex="2" required id="surname" autocomplete="off" name="surname" placeholder="Your last name" type="text">
+									</div>
+									<div class="form__line">
+										<label class="form__label" for="email">Email*</label>
+										<input class="form__input" tabindex="3" required id="email" autocomplete="off"name="email" placeholder="Your working email" type="email">
+									</div>
+									<div class="form__line">
+										<label class="form__label" for="phone">Phone</label>
+										<input class="form__input" tabindex="4" required id="phone" autocomplete="off" name="phone" placeholder="Your phone number" type="tel">
+									</div>
+									<div class="form__line form__line--area">
+										<label class="form__label" for="massege">Message*</label>
+										<textarea autocomplete="off" class="from__area" name="massege" placeholder="Your message" id="massege" required></textarea>
+									</div>
+								</div>
+								<div class="form__submenu">
+									<div class="form__checkbox checkbox">
+										<input class="checkbox__input" id="check" required autocomplete="off" name="check" type="checkbox">
+										<label class="checkbox__label" for="check">I agree to receive communications from Createx Online School</label>
+									</div>
+									<div class="form__button">
+										<a href="#" class="button">Send message</a>
+									</div>
+								</div>
+								</form>
+							</div>
+					</div>
+				</section>
+			</main>
+            <footer class="footer"></footer>
+		</div>
+	</body>
+</html>
